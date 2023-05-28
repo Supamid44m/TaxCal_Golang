@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TAXD</title>
+<link rel="stylesheet" href="static/stylesheet.css">
+</head>
+
+<body>
+<div>
+    <div class="info">
+        <h1>สรุปข้อมูล</h1>
+        <label for="" id = "fname"><h2>คุณ:{{.Fname}}</h2></label>
+
+        <label for=""><h2>เงินได้สุทธิของคุณ:{{.Fname}} เท่ากับ:{{.PincomeInt}} บาท</h2></label>
+        <p>(เงินได้สุทธิของคุณ = รายได้-รายจ่ายค่า-ลดหย่อนรวม)</p>
+
+        <label for=""><h2>ลดหย่อนส่วนตัวและครอบครัวรวม :{{.Disper}} บาท</h2></label>
+        <label for=""><h2>ลดหย่อนลงทุนรวม(ไม่เกิน100000) :{{.Disgua}} บาท</h2></label>
+        <label for=""><h2>ลดหย่อนประกันรวม(ไม่เกิน100000) :{{.Disheal}} บาท</h2></label>
+        <label for=""><h2>ลดหย่อนรวมทั้งหมด :{{.Discount}} บาท</h2></label>
+
+        <label for="" class="tax"><h2>ภาษีที่ต้องจ่าย คือ:{{.Taxint}} บาท</h2></label>
+    </div>
+    <div class="linkback">
+        <a href="https://aqueous-taiga-47141.herokuapp.com/" >กลับสู่หน้าแรก</a>
+    </div>
+</div>
+</body>
+</html>

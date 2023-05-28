@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TaxD</title>
+<link rel="stylesheet" href="static/stylesheet.css">
+</head>
+<body>
+<h1 class="head">เว็บคํานวณภาษีเงินได้บุคคลธรรมดา</h1>
+<p>***โปรดใส่ข้อมูลด้านล่าง***</p>
+
+<form action="/process" method="post">
+<div class="form"> 
+    <div class="first">
+        <div>
+            <label for="uname">ชื่อ</label>
+            <input type="text" name="uname" id="uname" class="fname">
+        </div>
+    
+        <br>
+        <div>
+            <label for="income">รายได้ต่อปี</label>
+            <input type="tel" name="income" id="inco">
+        </div>
+        <br>
+        <div>
+            <label for="pay">ค่าใช้จ่ายต่อปี</label>
+            <input type="tel" name="expen" id="pay">
+        </div>
+        <br>
+    </div>
+        <div class="per">
+        <div>
+            <h1 class="perhead">ลดหย่อนส่วนตัวและครอบครัว</h1>
+            <label for="dispe">ลดหย่อนส่วนตัว</label>
+            <input type="checkbox" name="disper" id="dispr" value="60000">
+            <label for="diswe">แต่งงานแล้ว</label>
+            <input type="checkbox" name="diswed" id="diswe" value="60000">
+        </div>
+            <br>
+        <div>
+            <label for="chil">จำนวนบุตรที่เกิดก่อนปี 2561</label>
+            <input type="tel" name="chil1" id="chil" >
+        </div>
+        <br>
+        <div>
+            <label for="chil2018">จำนวนบุตรที่เกิดตั้งแต่ปี 2561 เป็นต้นไป</label>
+            <input type="tel" name="chil2" id="chil2018" >
+        </div>
+        <br>
+        <div>
+         <label for="disfm">ค่าเลี้ยงดูบิดา-มารดา</label>
+             บิดา
+            <input type="checkbox" name="f" id="disfm" value="30000">
+            มารดา
+            <input type="checkbox" name="m" id="disfm" value="30000">
+        </div>
+        <br>
+        <div>
+            <label for="disdp">ลดหย่อนผู้พิการหรือทุพพลภาพ</label>
+            บิดา
+            <input type="checkbox" name="fdp" id="disdp" value="60000">
+            มารดา
+            <input type="checkbox" name="mdp" id="disdp" value="60000">
+            คู่สมรส
+        <input type="checkbox" name="husdp" id="disdp" value="60000">
+        </div>
+    </div>
+    <div class="gua">
+        <h1>ลดหย่อนกลุ่มการลงทุน</h1>
+        <div>
+        <label for="gua">กองทุนเพื่อการเลี้ยงชีพ(RMF)</label>
+        <input type="tel" name="rmf"  id="gua">
+        
+            <label for="gua">กองทุนรวมเพื่อการออมจาก(SSF)</label>
+            <input type="tel" name="ssf"  id="gua">
+            <label for="gua">ประกันชีวิตแบบบํานาญ</label>
+            <input type="tel" name="ann"  id="gua">
+        </div>
+        <br>
+        <div>
+            <label for="gua">กองทุนสำรองเลี้ยงชีพ(PVD)/กองทุนบำเหน็จบำนาญราชการ(กบข.)/กองทุนสงเคราะห์ครูเอกชน</label>
+            <input type="tel" name="pvd"  id="gua">
+            <br>
+            <br>
+            <label for="gua">กองทุนการออมแห่งชาต(กอช.)</label>
+            <input type="tel" name="nrf"  id="gua">
+        </div>
+    </div>
+    <div class="hel">
+        <h1>ลดหย่อนประกัน</h1>
+        <div>
+            <label for="hel">ประกันชีวิตและประกันสะสมทรัพย์</label>
+            <input type="tel" name="h1"  id="hel">
+            <label for="hel">ประกันสุขภาพ</label>
+            <input type="tel" name="h2"  id="hel">
+            <label for="hel">ประกันสังคม</label>
+            <input type="tel" name="h3"  id="hel">
+            </div>
+        <br>
+        <div>
+            <label for="hel">ประกันสุขภาพของบิดามารดา</label>
+            <input type="tel" name="h4"  id="hel">
+            <label for="hel">เงินลงทุนธุรกิจ Social Enterprise</label>
+            <input type="tel" name="h5"  id="hel">
+        </div>
+    </div>
+    </div>
+    
+    <br>
+    <input type="submit">
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+.fname{
+    color: blue;
+}
+input[type=text] {
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+input[type=tel] {
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.head{
+    
+}
+.first{
+   
+}
+
+.per{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: pink;
+    border-radius: 15px;
+    border-style: solid;
+    
+    
+    
+}
+
+
+.gua{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    border-style: solid;
+}
+.hel{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(240, 239, 198);
+    border-radius: 15px;
+    border-style: solid;
+}
+input[type=submit] {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    
+}
+input[type=submit]:hover{
+   background-color: gray;
+   color: black;
+}
+.tax{
+    color:red;
+    font-size: 20px;
+}
+.info{
+    border-style: dashed;
+    border-radius: 12px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linkback{
+    margin-top: 20px;
+    text-decoration: none;
+}
